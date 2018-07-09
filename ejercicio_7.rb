@@ -47,7 +47,8 @@ until salir
   elsif opcion == 5
     # Si el usuario ingresa 5, podra ver el item que tiene la mayor
     # cantidad de stock.
-    puts "El item con mayor stock es #{inventario.key(inventario.values.max)}."
+    puts 'El/los item(s) con mayor stock son:'
+    puts(inventario.select { |_, val| val == inventario.values.max }.keys)
   elsif opcion == 6
     # Si el usuario ingresa 6 podra ingresar y preguntarle al sistema si
     # un item existe en el inventario o no. Por ejemplo, el usuario
