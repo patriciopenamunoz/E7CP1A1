@@ -6,7 +6,7 @@ personas = ['Carolina', 'Alejandro', 'Maria Jesús', 'Valentín']
 edades = [32, 28, 41, 19]
 
 hash = {}
-personas.each_with_index { |value, index| hash[value] = edades[index] }
+personas.each_with_index { |value, index| hash[value.to_sym] = edades[index] }
 
 # Crear un metodo que reciba el hash y devuelva el promedio de las edades
 # del hash pasado como argumento.
