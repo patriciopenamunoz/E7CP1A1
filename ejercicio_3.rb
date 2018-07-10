@@ -15,3 +15,4 @@ puts 'yeeah' if h.key?('z')
 # Invertir el diccionario de forma que los valores sean las llaves y
 # las llaves los valores
 h = h.invert
+print h
